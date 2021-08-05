@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class PostController extends Controller
 {
@@ -61,6 +62,6 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-        return response(null, 204);
+        return response(null, Response::HTTP_NO_CONTENT);
     }
 }
