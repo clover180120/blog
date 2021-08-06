@@ -13,7 +13,6 @@ class Post extends Model
         'title',
         'content',
         'tag',
-        'user_id', // FIXME
     ];
 
     public function comments()
