@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PostUpdateRequest extends FormRequest
+class PostDestroyRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,13 +24,7 @@ class PostUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => [
-                'min:1',
-                'max:30',
-            ],
-            'content' => [
-                'min:1',
-            ],
+            //
         ];
     }
 }
